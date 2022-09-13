@@ -1,0 +1,15 @@
+// FONT FAMILY
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;900&display=swap');
+
+// IMPORTING SCSS FILES
+
+@import './mixins';
+@import './variables';
+@import './typography';
+@import './reset';
+
+@import './button';
+@import './header';
+@import './utilities';
+
+@import './section'
