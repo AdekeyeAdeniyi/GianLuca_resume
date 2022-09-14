@@ -225,7 +225,7 @@ a.btn--secondary,
 .herobox__content .heading {
   color: #833DAD;
   text-shadow: 2px 2px 5px rgba(65, 2, 103, 0.8);
-  font-size: 5rem;
+  font-size: 4rem;
 }
 @media only screen and (min-width: 768px) {
   .herobox__content .heading {
@@ -340,6 +340,7 @@ section {
 .about {
   position: relative;
   width: 100%;
+  padding-bottom: 0;
 }
 .about__heading {
   display: flex;
@@ -410,7 +411,7 @@ section {
 }
 .about__expertises .expertise::before {
   position: absolute;
-  top: 22%;
+  top: 74px;
   left: 0;
   content: " ";
   width: 100%;
@@ -451,7 +452,7 @@ section {
   background-image: url("../images/bg-icon2.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center top;
   padding: 200px 0 60px 0;
   width: 100%;
 }
@@ -498,4 +499,161 @@ section {
   line-height: 1.5;
   margin: 16px 0;
   color: #D8D8D8;
+}
+.works__porfolio {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+.works__porfolio .container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.works__porfolio .porfolio {
+  position: relative;
+  background-color: #F6F6F6;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.works__porfolio .porfolio::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  background-color: #969696;
+  left: 0;
+  top: 135px;
+}
+.works__porfolio .porfolio .title {
+  font-size: 2rem;
+  color: #833DAD;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.works__porfolio .porfolio .content {
+  color: #949191;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.works__porfolio .porfolio .languages {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+.works__porfolio .porfolio .languages .language {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #E3E3E3;
+  padding: 2px 20px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+
+/* Contact */
+.contact {
+  position: relative;
+  width: 100%;
+}
+.contact .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .contact .container {
+    flex-direction: row;
+  }
+}
+.contact__info {
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+  .contact__info {
+    flex-basis: 50%;
+  }
+}
+.contact__info .sub__title {
+  color: #833DAD;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.contact__info .title {
+  color: #1E1E1E;
+}
+.contact__info .content {
+  margin: 12px 0 20px 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #727272;
+}
+.contact__form {
+  position: relative;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .contact__form {
+    flex-basis: 50%;
+  }
+}
+.contact__form .form {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .contact__form .form {
+    width: 400px;
+  }
+}
+.contact__form .form .input__group {
+  position: relative;
+  width: 100%;
+}
+.contact__form .form .input__group:not(:last-child) {
+  margin-bottom: 12px;
+}
+.contact__form .form .input__group label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.contact__form .form .input__group .form-control {
+  width: 100%;
+  height: 36px;
+  border: 2px solid #E4E4E4;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 1.4rem;
+  font-family: "Noto Sans", sans-serif;
+  outline: none;
+}
+.contact__form .form textarea {
+  width: 100%;
+  border: 2px solid #E4E4E4;
+  outline: none;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
