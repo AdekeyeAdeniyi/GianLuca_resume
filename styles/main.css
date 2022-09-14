@@ -89,7 +89,6 @@ body {
 a.btn,
 .btn {
   padding: 8px 18px;
-  border-radius: 50px;
   cursor: pointer;
   transition: all 0.2s linear;
   display: inline-flex;
@@ -112,6 +111,18 @@ a.btn--primary:hover,
 .btn--primary:hover {
   background-color: transparent;
 }
+a.btn--primary-dark,
+.btn--primary-dark {
+  background-color: #833DAD;
+  color: #FFFFFF;
+  border: 1px solid #833DAD;
+  transition: all 0.2s linear;
+}
+a.btn--primary-dark:hover,
+.btn--primary-dark:hover {
+  background-color: transparent;
+  color: #833DAD;
+}
 a.btn--md,
 .btn--md {
   font-size: 1.6rem;
@@ -121,6 +132,10 @@ a.btn--secondary,
   background-color: rgba(30, 30, 30, 0.3);
   color: #29BB89;
   border: 2px solid rgba(30, 30, 30, 0.3);
+}
+a.btn--rounded,
+.btn--rounded {
+  border-radius: 50px;
 }
 
 .header {
@@ -355,6 +370,12 @@ section {
 }
 .about__heading--title {
   color: #1E1E1E;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .about__heading--title {
+    font-size: 4rem;
+  }
 }
 .about__description {
   font-size: 1.6rem;
@@ -567,6 +588,7 @@ section {
 .contact {
   position: relative;
   width: 100%;
+  padding: 100px 0;
 }
 .contact .container {
   display: flex;
@@ -595,6 +617,12 @@ section {
 }
 .contact__info .title {
   color: #1E1E1E;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .contact__info .title {
+    font-size: 4rem;
+  }
 }
 .contact__info .content {
   margin: 12px 0 20px 0;
@@ -656,4 +684,40 @@ section {
   border: 2px solid #E4E4E4;
   outline: none;
   border-radius: 4px;
+}
+.contact__form .form .btn {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* Footer */
+.footer {
+  padding: 100px 0 60px 0;
+  background-image: url("../images/bg-icon3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container img {
+  width: 200px;
+}
+@media only screen and (min-width: 992px) {
+  .footer .container img {
+    width: 300px;
+  }
+}
+.footer .container .social {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.footer__text {
+  text-align: center;
+  color: #727272;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
